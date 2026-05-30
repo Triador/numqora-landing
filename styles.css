@@ -231,7 +231,7 @@ h1 {
 .chat-video {
   width: min(100%, 20rem);
   overflow: hidden;
-  aspect-ratio: 720 / 1560;
+  aspect-ratio: 886 / 1920;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 2rem;
   background: #05070b;
