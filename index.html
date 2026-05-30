@@ -19,7 +19,7 @@
     <link rel="icon" type="image/jpeg" href="assets/numqora-logo.jpg">
     <link rel="preload" href="assets/numqora-logo.jpg" as="image">
     <link rel="preload" href="assets/numqora-overview.png?v=mini-categories-fit-1" as="image">
-    <link rel="stylesheet" href="styles.css?v=mini-screenshot-frame-1">
+    <link rel="stylesheet" href="styles.css?v=responsive-polish-1">
   </head>
   <body>
     <header class="site-header" aria-label="Главная навигация">
@@ -28,8 +28,8 @@
         <span>Numqora</span>
       </a>
       <nav class="nav-links" aria-label="Ссылки">
-        <a href="#how">Чат</a>
-        <a href="#answers">Ассистент</a>
+        <a href="#miniapp">Mini App</a>
+        <a href="#screens">Экраны</a>
         <a href="#privacy">Данные</a>
       </nav>
       <a class="header-action" href="https://t.me/NumqoraBot?start=landing">Открыть бота</a>
@@ -120,49 +120,7 @@
         </div>
       </section>
 
-      <section class="section" id="how" aria-labelledby="how-title">
-        <div class="section-heading">
-          <p class="eyebrow">Чат</p>
-          <h2 id="how-title">Веди учет так же просто, как пишешь сообщение</h2>
-        </div>
-        <div class="input-grid">
-          <article>
-            <h3>Говори на ходу</h3>
-            <p>Отправь голосовое про трату, долг или доход: ассистент разберет смысл сам.</p>
-          </article>
-          <article>
-            <h3>Пиши, как удобно</h3>
-            <p>“Ужин 6786, я оплатил, 2400 за Рому и 2200 за Леху”.</p>
-          </article>
-          <article>
-            <h3>Отправляй чеки и выписки</h3>
-            <p>Добавь фото чека или файл с историей транзакций от банка.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section answers" id="answers" aria-labelledby="answers-title">
-        <div class="section-heading">
-          <p class="eyebrow">Ассистент</p>
-          <h2 id="answers-title">Он не просто записывает, а помогает понимать картину</h2>
-        </div>
-        <div class="answer-list">
-          <div>
-            <strong>Как дела с финансами?</strong>
-            <span>расходы по категориям, динамика, бюджеты и заметные изменения</span>
-          </div>
-          <div>
-            <strong>Что с общими тратами?</strong>
-            <span>кто оплатил, кто участвует, сколько вернуть и кому</span>
-          </div>
-          <div>
-            <strong>Что делать дальше?</strong>
-            <span>напоминания, объяснения и подсказки без отдельной таблицы</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section product-preview" aria-label="Интерфейс Numqora">
+      <section class="section product-preview" id="miniapp" aria-label="Интерфейс Numqora">
         <div class="phone-frame miniapp-screenshot-frame">
           <div class="phone-glass">
             <img
@@ -174,8 +132,163 @@
             >
           </div>
         </div>
-        <div>
+        <div class="product-copy">
           <h2>Чат для быстрых действий, Mini App для визуализации и аналитики</h2>
+          <div class="capability-row product-tags" aria-label="Возможности Mini App">
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 19V5"></path>
+                <path d="M4 19h16"></path>
+                <path d="M8 15v-4"></path>
+                <path d="M12 15V8"></path>
+                <path d="M16 15v-6"></path>
+              </svg>
+              Общая картина
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h13a3 3 0 0 1 3 3v7H6a2 2 0 0 1-2-2V7Z"></path>
+                <path d="M16 12h4"></path>
+                <path d="M17 15h.01"></path>
+              </svg>
+              Кошельки
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19V5"></path>
+                <path d="M9 19v-7"></path>
+                <path d="M13 19v-4"></path>
+                <path d="M17 19V8"></path>
+                <path d="M21 19H3"></path>
+              </svg>
+              Лимиты трат
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 7h11l-3-3"></path>
+                <path d="M17 17H6l3 3"></path>
+                <path d="M18 7l-4 4"></path>
+                <path d="M6 17l4-4"></path>
+              </svg>
+              Долги и возвраты
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 5h14"></path>
+                <path d="M5 12h14"></path>
+                <path d="M5 19h10"></path>
+                <path d="M3 5h.01"></path>
+                <path d="M3 12h.01"></path>
+                <path d="M3 19h.01"></path>
+              </svg>
+              История операций
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="8" cy="9" r="3"></circle>
+                <path d="M3 19a5 5 0 0 1 10 0"></path>
+                <circle cx="17" cy="8" r="2.5"></circle>
+                <path d="M14 18a4 4 0 0 1 7 0"></path>
+              </svg>
+              Группы расходов
+            </span>
+          </div>
+          <div class="product-actions">
+            <a class="button primary" href="https://t.me/NumqoraBot?startapp=0__v20260511b">Открыть Mini App</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section mini-carousel" id="screens" aria-label="Экраны Mini App">
+        <div class="carousel-layout" data-carousel>
+          <div class="carousel-content">
+            <div class="carousel-copy">
+              <h3 data-carousel-title>Отдельный учет расходов и активов</h3>
+            </div>
+          </div>
+
+          <div class="carousel-stage" aria-label="Экраны Mini App" aria-live="polite">
+            <button class="phone-frame carousel-slide active" type="button" data-carousel-slide="0" aria-label="Кошельки">
+              <div class="phone-glass">
+                <img
+                  class="carousel-screen"
+                  src="assets/numqora-miniapp-wallets.png?v=wallets-favicons-1"
+                  width="780"
+                  height="1688"
+                  alt="Экран кошельков Numqora с общими бюджетами"
+                >
+              </div>
+            </button>
+            <button class="phone-frame carousel-slide" type="button" data-carousel-slide="1" aria-label="Лимиты">
+              <div class="phone-glass">
+                <img
+                  class="carousel-screen"
+                  src="assets/numqora-miniapp-limits.png?v=wallets-limits-3"
+                  width="780"
+                  height="1688"
+                  alt="Экран лимитов Numqora с общим лимитом кошелька и лимитами по категориям"
+                >
+              </div>
+            </button>
+            <button class="phone-frame carousel-slide" type="button" data-carousel-slide="2" aria-label="Долги">
+              <div class="phone-glass">
+                <img
+                  class="carousel-screen"
+                  src="assets/numqora-miniapp-debts.png?v=sochi-avatars-2"
+                  width="780"
+                  height="1688"
+                  alt="Экран Numqora с долгами, группами расходов и суммами к возврату"
+                >
+              </div>
+            </button>
+            <button class="phone-frame carousel-slide" type="button" data-carousel-slide="3" aria-label="История">
+              <div class="phone-glass">
+                <img
+                  class="carousel-screen"
+                  src="assets/numqora-miniapp-history.png?v=history-category-icons-1"
+                  width="780"
+                  height="1688"
+                  alt="История операций Numqora с тратами, доходами и возвратами"
+                >
+              </div>
+            </button>
+            <button class="phone-frame carousel-slide" type="button" data-carousel-slide="4" aria-label="Профиль">
+              <div class="phone-glass">
+                <img
+                  class="carousel-screen"
+                  src="assets/numqora-miniapp-profile.png?v=profile-avatar-2"
+                  width="780"
+                  height="1688"
+                  alt="Профиль Numqora с выбором основной валюты, кошельком по умолчанию и настройками уведомлений"
+                >
+              </div>
+            </button>
+            <button class="phone-frame carousel-slide" type="button" data-carousel-slide="5" aria-label="Сводка">
+              <div class="phone-glass">
+                <img
+                  class="carousel-screen"
+                  src="assets/numqora-overview.png?v=mini-categories-fit-1"
+                  width="780"
+                  height="1688"
+                  alt="Сводка Numqora с балансом, категориями и последними операциями"
+                >
+              </div>
+            </button>
+          </div>
+
+          <div class="carousel-nav" aria-label="Переключение экранов Mini App">
+            <button type="button" aria-label="Предыдущий экран" data-carousel-prev>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+            </button>
+            <span class="carousel-current" data-carousel-current aria-live="polite">Кошельки</span>
+            <button type="button" aria-label="Следующий экран" data-carousel-next>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -189,6 +302,99 @@
       <a href="https://t.me/NumqoraSupportBot">Поддержка в Telegram</a>
     </footer>
     <script>
+      const miniAppScreens = [
+        {
+          label: "Кошельки",
+          title: "Отдельный учет расходов и активов",
+          image: "assets/numqora-miniapp-wallets.png?v=wallets-favicons-1",
+          alt: "Экран кошельков Numqora с общими бюджетами",
+        },
+        {
+          label: "Лимиты",
+          title: "Лимиты на расходы",
+          image: "assets/numqora-miniapp-limits.png?v=wallets-limits-3",
+          alt: "Экран лимитов Numqora с общим лимитом кошелька и лимитами по категориям",
+        },
+        {
+          label: "Долги",
+          title: "Долги и группы расходов",
+          image: "assets/numqora-miniapp-debts.png?v=sochi-avatars-2",
+          alt: "Экран Numqora с долгами, группами расходов и суммами к возврату",
+        },
+        {
+          label: "История",
+          title: "Полная история операций",
+          image: "assets/numqora-miniapp-history.png?v=history-category-icons-1",
+          alt: "История операций Numqora с тратами, доходами и возвратами",
+        },
+        {
+          label: "Профиль",
+          title: "Валюта и настройки профиля",
+          image: "assets/numqora-miniapp-profile.png?v=profile-avatar-2",
+          alt: "Профиль Numqora с выбором основной валюты, кошельком по умолчанию и настройками уведомлений",
+        },
+        {
+          label: "Сводка",
+          title: "Полная финансовая картина",
+          image: "assets/numqora-overview.png?v=mini-categories-fit-1",
+          alt: "Сводка Numqora с балансом, категориями и последними операциями",
+        },
+      ];
+
+      window.setTimeout(() => {
+        miniAppScreens.slice(1).forEach((slide) => {
+          const img = new Image();
+          img.src = slide.image;
+        });
+      }, 600);
+
+      document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+        const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
+        const title = carousel.querySelector("[data-carousel-title]");
+        const current = carousel.querySelector("[data-carousel-current]");
+        const prev = carousel.querySelector("[data-carousel-prev]");
+        const next = carousel.querySelector("[data-carousel-next]");
+        let activeIndex = 0;
+
+        function renderSlide(index) {
+          activeIndex = (index + miniAppScreens.length) % miniAppScreens.length;
+          const slide = miniAppScreens[activeIndex];
+
+          if (title) title.textContent = slide.title;
+          if (current) current.textContent = slide.label;
+
+          slides.forEach((item, itemIndex) => {
+            const previousIndex = (activeIndex - 1 + miniAppScreens.length) % miniAppScreens.length;
+            const nextIndex = (activeIndex + 1) % miniAppScreens.length;
+            const state = itemIndex === activeIndex
+              ? "active"
+              : itemIndex === previousIndex
+                ? "prev"
+                : itemIndex === nextIndex
+                  ? "next"
+                  : "hidden";
+            item.dataset.state = state;
+            item.classList.toggle("active", state === "active");
+            item.setAttribute("aria-hidden", state === "hidden" ? "true" : "false");
+            item.tabIndex = state === "hidden" ? -1 : 0;
+          });
+        }
+
+        slides.forEach((slide) => {
+          slide.addEventListener("click", () => {
+            renderSlide(Number(slide.dataset.carouselSlide || 0));
+          });
+        });
+        prev?.addEventListener("click", () => renderSlide(activeIndex - 1));
+        next?.addEventListener("click", () => renderSlide(activeIndex + 1));
+        carousel.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowLeft") renderSlide(activeIndex - 1);
+          if (event.key === "ArrowRight") renderSlide(activeIndex + 1);
+        });
+
+        renderSlide(0);
+      });
+
       document.querySelectorAll("video[autoplay]").forEach((video) => {
         video.muted = true;
         video.playsInline = true;
