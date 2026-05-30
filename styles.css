@@ -118,9 +118,9 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(22rem, 28rem);
+  grid-template-columns: minmax(0, 1fr) minmax(24rem, 32rem);
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   width: min(100% - 2rem, var(--max));
   min-height: 42rem;
   margin: 0 auto;
@@ -231,7 +231,7 @@ h1 {
 .phone-frame {
   position: relative;
   justify-self: end;
-  width: min(100%, 25rem);
+  width: min(100%, 29rem);
   padding: 0.46rem;
   border-radius: 2.85rem;
   background:
