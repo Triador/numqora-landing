@@ -19,7 +19,7 @@
     <link rel="icon" type="image/jpeg" href="assets/numqora-logo.jpg">
     <link rel="preload" href="assets/numqora-logo.jpg" as="image">
     <link rel="preload" href="assets/numqora-overview.png" as="image">
-    <link rel="stylesheet" href="styles.css?v=phone-frame-5">
+    <link rel="stylesheet" href="styles.css?v=phone-frame-6">
   </head>
   <body>
     <header class="site-header" aria-label="Главная навигация">
@@ -103,7 +103,6 @@
           <div class="phone-glass">
             <video
               class="chat-screenshot chat-video"
-              src="assets/numqora-telegram-demo-landing-crisp.mp4"
               width="770"
               height="1668"
               autoplay
@@ -113,7 +112,10 @@
               preload="auto"
               poster="assets/numqora-telegram-demo-landing-crisp-poster.jpg"
               aria-label="Реальная запись общения с Numqora в Telegram"
-            ></video>
+            >
+              <source src="assets/numqora-telegram-demo-landing-crisp.webm" type="video/webm">
+              <source src="assets/numqora-telegram-demo-landing-crisp.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </section>
