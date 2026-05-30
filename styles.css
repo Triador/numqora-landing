@@ -228,14 +228,67 @@ h1 {
   justify-self: end;
 }
 
+.phone-frame {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 25rem);
+  padding: 0.46rem;
+  border-radius: 2.85rem;
+  background:
+    linear-gradient(145deg, rgba(255, 248, 232, 0.24), transparent 18%),
+    linear-gradient(325deg, rgba(241, 199, 91, 0.28), transparent 24%),
+    linear-gradient(135deg, #202018, #060604 44%, #17130b);
+  box-shadow:
+    -1.4rem 1.8rem 3.8rem rgba(0, 0, 0, 0.56),
+    0 0 0 1px rgba(241, 199, 91, 0.2),
+    inset 0 0.12rem 0.16rem rgba(255, 255, 255, 0.18),
+    inset 0 -0.35rem 0.8rem rgba(0, 0, 0, 0.74);
+  transform: perspective(72rem) rotateY(-6deg) rotateX(2deg) rotateZ(-1deg);
+  transform-origin: center;
+}
+
+.phone-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0.16rem;
+  z-index: 2;
+  pointer-events: none;
+  border: 1px solid rgba(255, 248, 232, 0.12);
+  border-radius: 2.66rem;
+  box-shadow: inset 0.08rem 0.08rem 0.24rem rgba(255, 255, 255, 0.12);
+}
+
+.phone-frame::after {
+  content: "";
+  position: absolute;
+  top: 21%;
+  right: -0.18rem;
+  width: 0.18rem;
+  height: 4.2rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 248, 232, 0.3), rgba(63, 50, 24, 0.72));
+  box-shadow: 0.16rem 0.25rem 0.9rem rgba(0, 0, 0, 0.45);
+}
+
+.phone-glass {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 2.38rem;
+  background: #05070b;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 0 2.2rem rgba(241, 199, 91, 0.08);
+}
+
 .chat-video {
-  width: min(100%, 24rem);
+  width: 100%;
   overflow: hidden;
   aspect-ratio: 886 / 1920;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 2rem;
+  border: 0;
+  border-radius: 2.08rem;
   background: #05070b;
-  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: none;
   object-fit: cover;
 }
 
@@ -383,6 +436,12 @@ h3 {
     justify-self: center;
   }
 
+  .phone-frame {
+    justify-self: center;
+    width: min(100%, 25rem);
+    transform: perspective(68rem) rotateY(-3deg) rotateX(1deg);
+  }
+
   .input-grid,
   .answers,
   .product-preview {
@@ -454,6 +513,25 @@ h3 {
 
   .chat-screenshot {
     width: min(100%, 23.5rem);
+  }
+
+  .phone-frame {
+    width: min(100%, 23.5rem);
+    padding: 0.38rem;
+    border-radius: 2.45rem;
+    transform: none;
+  }
+
+  .phone-frame::before {
+    border-radius: 2.28rem;
+  }
+
+  .phone-glass {
+    border-radius: 2rem;
+  }
+
+  .chat-video {
+    border-radius: 1.74rem;
   }
 
   .section {
