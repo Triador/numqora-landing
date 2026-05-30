@@ -382,7 +382,7 @@ h3 {
 
 .product-preview {
   display: grid;
-  grid-template-columns: minmax(13rem, 20rem) minmax(0, 1fr);
+  grid-template-columns: minmax(22rem, 25rem) minmax(0, 1fr);
   gap: 3rem;
   align-items: center;
 }
@@ -395,11 +395,21 @@ h3 {
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.38);
 }
 
+.miniapp-phone-frame {
+  justify-self: start;
+  width: min(100%, 25rem);
+}
+
+.miniapp-phone-glass {
+  aspect-ratio: 770 / 1668;
+}
+
 .miniapp-preview {
   display: flex;
   position: relative;
-  width: min(100%, 20rem);
-  min-height: 43.25rem;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
   flex-direction: column;
   gap: 0.72rem;
   overflow: hidden;
@@ -414,6 +424,14 @@ h3 {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
+}
+
+.miniapp-phone-glass .miniapp-preview {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .miniapp-preview button {
@@ -645,11 +663,17 @@ h3 {
 }
 
 .miniapp-recent {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
   padding-bottom: 0.7rem;
 }
 
 .miniapp-recent-list {
   display: grid;
+  flex: 1 1 auto;
+  align-content: stretch;
 }
 
 .miniapp-recent-row {
@@ -657,7 +681,7 @@ h3 {
   grid-template-columns: 2.35rem minmax(0, 1fr) auto;
   gap: 0.65rem;
   align-items: center;
-  min-height: 3.25rem;
+  min-height: 3.55rem;
   border-bottom: 1px solid rgba(245, 229, 189, 0.07);
 }
 
@@ -714,7 +738,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.18rem;
-  margin-top: auto;
+  margin-top: 0;
   padding: 0.28rem;
   border: 1px solid rgba(245, 229, 189, 0.12);
   border-radius: 1.18rem;
@@ -867,7 +891,8 @@ h3 {
     margin-bottom: 1.6rem;
   }
 
-  .product-preview img {
+  .product-preview > img,
+  .miniapp-phone-frame {
     justify-self: center;
   }
 }
@@ -947,6 +972,10 @@ h3 {
 
   .chat-video {
     border-radius: 0;
+  }
+
+  .miniapp-phone-frame {
+    width: min(100%, 23.5rem);
   }
 
   .section {

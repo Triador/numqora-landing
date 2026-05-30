@@ -18,7 +18,7 @@
     <title>Numqora - AI-ассистент для личных и совместных расходов</title>
     <link rel="icon" type="image/jpeg" href="assets/numqora-logo.jpg">
     <link rel="preload" href="assets/numqora-logo.jpg" as="image">
-    <link rel="stylesheet" href="styles.css?v=mini-html-1">
+    <link rel="stylesheet" href="styles.css?v=mini-html-phone-1">
   </head>
   <body>
     <header class="site-header" aria-label="Главная навигация">
@@ -162,108 +162,112 @@
       </section>
 
       <section class="section product-preview" aria-label="Интерфейс Numqora">
-        <div class="miniapp-preview" role="img" aria-label="Экран Numqora с балансом, расходами по категориям и последними тратами">
-          <section class="miniapp-balance-card">
-            <span>Баланс</span>
-            <strong>2394.80 €</strong>
-          </section>
+        <div class="phone-frame miniapp-phone-frame" role="img" aria-label="Экран Numqora с балансом, расходами по категориям и последними тратами">
+          <div class="phone-glass miniapp-phone-glass">
+            <div class="miniapp-preview">
+              <section class="miniapp-balance-card">
+                <span>Баланс</span>
+                <strong>2394.80 €</strong>
+              </section>
 
-          <div class="miniapp-actions">
-            <button class="miniapp-action miniapp-action-expense" type="button">
-              <span class="miniapp-wallet-icon" aria-hidden="true"></span>
-              <span>Расход</span>
-            </button>
-            <button class="miniapp-action miniapp-action-income" type="button">
-              <span class="miniapp-wallet-icon miniapp-wallet-icon-plus" aria-hidden="true"></span>
-              <span>Доход</span>
-            </button>
+              <div class="miniapp-actions">
+                <button class="miniapp-action miniapp-action-expense" type="button">
+                  <span class="miniapp-wallet-icon" aria-hidden="true"></span>
+                  <span>Расход</span>
+                </button>
+                <button class="miniapp-action miniapp-action-income" type="button">
+                  <span class="miniapp-wallet-icon miniapp-wallet-icon-plus" aria-hidden="true"></span>
+                  <span>Доход</span>
+                </button>
+              </div>
+
+              <button class="miniapp-receipt" type="button">
+                <span class="miniapp-receipt-icon" aria-hidden="true"></span>
+                <span>Загрузить чек</span>
+              </button>
+
+              <section class="miniapp-panel miniapp-categories">
+                <div class="miniapp-panel-head">
+                  <h3>Расходы по категориям</h3>
+                  <span aria-hidden="true">›</span>
+                </div>
+                <div class="miniapp-category-grid">
+                  <div class="miniapp-donut" aria-hidden="true">
+                    <span><small>Всего</small><strong>845 €</strong></span>
+                  </div>
+                  <div class="miniapp-category-list">
+                    <div class="miniapp-category-row">
+                      <img src="assets/miniapp-icons/food.webp" width="22" height="22" alt="" aria-hidden="true">
+                      <span>Еда и кафе</span>
+                      <strong>338 €</strong>
+                      <em>40%</em>
+                    </div>
+                    <div class="miniapp-category-row">
+                      <img src="assets/miniapp-icons/transport.webp" width="22" height="22" alt="" aria-hidden="true">
+                      <span>Транспорт</span>
+                      <strong>211 €</strong>
+                      <em>25%</em>
+                    </div>
+                    <div class="miniapp-category-row">
+                      <img src="assets/miniapp-icons/home.webp" width="22" height="22" alt="" aria-hidden="true">
+                      <span>Дом</span>
+                      <strong>127 €</strong>
+                      <em>15%</em>
+                    </div>
+                    <div class="miniapp-category-row">
+                      <img src="assets/miniapp-icons/shopping.webp" width="22" height="22" alt="" aria-hidden="true">
+                      <span>Покупки</span>
+                      <strong>85 €</strong>
+                      <em>10%</em>
+                    </div>
+                    <div class="miniapp-category-row">
+                      <img src="assets/miniapp-icons/other.webp" width="22" height="22" alt="" aria-hidden="true">
+                      <span>Другое</span>
+                      <strong>85 €</strong>
+                      <em>10%</em>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="miniapp-panel miniapp-recent">
+                <div class="miniapp-panel-head">
+                  <h3>Последние операции</h3>
+                  <span aria-hidden="true">›</span>
+                </div>
+                <div class="miniapp-recent-list">
+                  <article class="miniapp-recent-row is-income">
+                    <img src="assets/miniapp-icons/income.webp" width="44" height="44" alt="" aria-hidden="true">
+                    <span><strong>Зарплата</strong></span>
+                    <em><small>Сегодня, 08:10</small><strong>+2800.00 €</strong></em>
+                  </article>
+                  <article class="miniapp-recent-row">
+                    <img src="assets/miniapp-icons/food.webp" width="44" height="44" alt="" aria-hidden="true">
+                    <span><strong>Кафе</strong><small>Кофе и пирожное</small></span>
+                    <em><small>Сегодня, 10:23</small><strong>-4.60 €</strong></em>
+                  </article>
+                  <article class="miniapp-recent-row">
+                    <img src="assets/miniapp-icons/transport.webp" width="44" height="44" alt="" aria-hidden="true">
+                    <span><strong>Такси</strong><small>Поездка в центр</small></span>
+                    <em><small>Сегодня, 09:15</small><strong>-12.40 €</strong></em>
+                  </article>
+                  <article class="miniapp-recent-row">
+                    <img src="assets/miniapp-icons/groceries.webp" width="44" height="44" alt="" aria-hidden="true">
+                    <span><strong>Продукты</strong><small>Супермаркет</small></span>
+                    <em><small>Вчера, 20:47</small><strong>-38.75 €</strong></em>
+                  </article>
+                </div>
+              </section>
+
+              <nav class="miniapp-tabbar" aria-label="Навигация Mini App">
+                <span class="active"><i class="tab-dot tab-balance" aria-hidden="true"></i><strong>Сводка</strong></span>
+                <span><i class="tab-dot tab-wallets" aria-hidden="true"></i><strong>Кошельки</strong></span>
+                <span><i class="tab-dot tab-debts" aria-hidden="true"></i><strong>Долги</strong></span>
+                <span><i class="tab-dot tab-history" aria-hidden="true"></i><strong>История</strong></span>
+                <span><i class="tab-dot tab-profile" aria-hidden="true"></i><strong>Профиль</strong></span>
+              </nav>
+            </div>
           </div>
-
-          <button class="miniapp-receipt" type="button">
-            <span class="miniapp-receipt-icon" aria-hidden="true"></span>
-            <span>Загрузить чек</span>
-          </button>
-
-          <section class="miniapp-panel miniapp-categories">
-            <div class="miniapp-panel-head">
-              <h3>Расходы по категориям</h3>
-              <span aria-hidden="true">›</span>
-            </div>
-            <div class="miniapp-category-grid">
-              <div class="miniapp-donut" aria-hidden="true">
-                <span><small>Всего</small><strong>845 €</strong></span>
-              </div>
-              <div class="miniapp-category-list">
-                <div class="miniapp-category-row">
-                  <img src="assets/miniapp-icons/food.webp" width="22" height="22" alt="" aria-hidden="true">
-                  <span>Еда и кафе</span>
-                  <strong>338 €</strong>
-                  <em>40%</em>
-                </div>
-                <div class="miniapp-category-row">
-                  <img src="assets/miniapp-icons/transport.webp" width="22" height="22" alt="" aria-hidden="true">
-                  <span>Транспорт</span>
-                  <strong>211 €</strong>
-                  <em>25%</em>
-                </div>
-                <div class="miniapp-category-row">
-                  <img src="assets/miniapp-icons/home.webp" width="22" height="22" alt="" aria-hidden="true">
-                  <span>Дом</span>
-                  <strong>127 €</strong>
-                  <em>15%</em>
-                </div>
-                <div class="miniapp-category-row">
-                  <img src="assets/miniapp-icons/shopping.webp" width="22" height="22" alt="" aria-hidden="true">
-                  <span>Покупки</span>
-                  <strong>85 €</strong>
-                  <em>10%</em>
-                </div>
-                <div class="miniapp-category-row">
-                  <img src="assets/miniapp-icons/other.webp" width="22" height="22" alt="" aria-hidden="true">
-                  <span>Другое</span>
-                  <strong>85 €</strong>
-                  <em>10%</em>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="miniapp-panel miniapp-recent">
-            <div class="miniapp-panel-head">
-              <h3>Последние операции</h3>
-              <span aria-hidden="true">›</span>
-            </div>
-            <div class="miniapp-recent-list">
-              <article class="miniapp-recent-row is-income">
-                <img src="assets/miniapp-icons/income.webp" width="44" height="44" alt="" aria-hidden="true">
-                <span><strong>Зарплата</strong></span>
-                <em><small>Сегодня, 08:10</small><strong>+2800.00 €</strong></em>
-              </article>
-              <article class="miniapp-recent-row">
-                <img src="assets/miniapp-icons/food.webp" width="44" height="44" alt="" aria-hidden="true">
-                <span><strong>Кафе</strong><small>Кофе и пирожное</small></span>
-                <em><small>Сегодня, 10:23</small><strong>-4.60 €</strong></em>
-              </article>
-              <article class="miniapp-recent-row">
-                <img src="assets/miniapp-icons/transport.webp" width="44" height="44" alt="" aria-hidden="true">
-                <span><strong>Такси</strong><small>Поездка в центр</small></span>
-                <em><small>Сегодня, 09:15</small><strong>-12.40 €</strong></em>
-              </article>
-              <article class="miniapp-recent-row">
-                <img src="assets/miniapp-icons/groceries.webp" width="44" height="44" alt="" aria-hidden="true">
-                <span><strong>Продукты</strong><small>Супермаркет</small></span>
-                <em><small>Вчера, 20:47</small><strong>-38.75 €</strong></em>
-              </article>
-            </div>
-          </section>
-
-          <nav class="miniapp-tabbar" aria-label="Навигация Mini App">
-            <span class="active"><i class="tab-dot tab-balance" aria-hidden="true"></i><strong>Сводка</strong></span>
-            <span><i class="tab-dot tab-wallets" aria-hidden="true"></i><strong>Кошельки</strong></span>
-            <span><i class="tab-dot tab-debts" aria-hidden="true"></i><strong>Долги</strong></span>
-            <span><i class="tab-dot tab-history" aria-hidden="true"></i><strong>История</strong></span>
-            <span><i class="tab-dot tab-profile" aria-hidden="true"></i><strong>Профиль</strong></span>
-          </nav>
         </div>
         <div>
           <h2>Чат для быстрых действий, Mini App для визуализации и аналитики</h2>
