@@ -118,9 +118,9 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(24rem, 32rem);
+  grid-template-columns: minmax(0, 1fr) minmax(22rem, 28rem);
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   width: min(100% - 2rem, var(--max));
   min-height: 42rem;
   margin: 0 auto;
@@ -231,7 +231,7 @@ h1 {
 .phone-frame {
   position: relative;
   justify-self: end;
-  width: min(100%, 29rem);
+  width: min(100%, 25rem);
   padding: 0.46rem;
   border-radius: 2.85rem;
   background:
@@ -275,7 +275,7 @@ h1 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  aspect-ratio: 886 / 1920;
+  aspect-ratio: 770 / 1668;
   border-radius: 2.38rem;
   background: #05070b;
   box-shadow:
@@ -290,7 +290,7 @@ h1 {
   width: 100%;
   height: calc(100% + 0.75rem);
   overflow: hidden;
-  aspect-ratio: 886 / 1920;
+  aspect-ratio: 770 / 1668;
   border: 0;
   border-radius: 0;
   background: #05070b;
