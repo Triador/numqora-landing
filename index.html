@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080806">
+    <meta
+      name="description"
+      content="Numqora - AI-ассистент для личных и совместных расходов в Telegram."
+    >
+    <meta property="og:title" content="Numqora - AI-ассистент для личных и совместных расходов">
+    <meta
+      property="og:description"
+      content="Пиши текстом или голосом: Numqora записывает траты, ведет совместные расходы и отвечает, как у тебя дела с финансами."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/numqora-overview.png">
+    <title>Numqora - AI-ассистент для личных и совместных расходов</title>
+    <link rel="icon" type="image/jpeg" href="assets/numqora-logo.jpg">
+    <link rel="preload" href="assets/numqora-logo.jpg" as="image">
+    <link rel="preload" href="assets/numqora-overview.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Главная навигация">
+      <a class="brand" href="/" aria-label="Numqora">
+        <img class="brand-mark" src="assets/numqora-logo.jpg" width="40" height="40" alt="" aria-hidden="true">
+        <span>Numqora</span>
+      </a>
+      <nav class="nav-links" aria-label="Ссылки">
+        <a href="#how">Чат</a>
+        <a href="#answers">Ассистент</a>
+        <a href="#privacy">Данные</a>
+      </nav>
+      <a class="header-action" href="https://t.me/NumqoraBot?start=landing">Открыть бота</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">AI-ассистент для личных и совместных расходов</p>
+          <h1 id="hero-title">Финансы под рукой в обычном чате</h1>
+          <div class="hero-actions">
+            <a class="button primary" href="https://t.me/NumqoraBot?start=landing">Начать в Telegram</a>
+          </div>
+          <div class="capability-row" aria-label="Возможности">
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z"></path>
+                <path d="M19 10v1a7 7 0 0 1-14 0v-1"></path>
+                <path d="M12 18v3"></path>
+                <path d="M8 21h8"></path>
+              </svg>
+              Текст и голос
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h10v18l-2-1-2 1-2-1-2 1-2-1-2 1V3Z"></path>
+                <path d="M9 8h6"></path>
+                <path d="M9 12h6"></path>
+                <path d="M9 16h3"></path>
+              </svg>
+              Чеки
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="8" cy="9" r="3"></circle>
+                <path d="M3 19a5 5 0 0 1 10 0"></path>
+                <circle cx="17" cy="8" r="2.5"></circle>
+                <path d="M14 18a4 4 0 0 1 7 0"></path>
+              </svg>
+              Личные и совместные траты
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 19V5"></path>
+                <path d="M4 19h16"></path>
+                <path d="M8 15v-4"></path>
+                <path d="M12 15V8"></path>
+                <path d="M16 15v-6"></path>
+              </svg>
+              Контроль бюджета
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3Z"></path>
+                <path d="M19 14l0.8 2.2L22 17l-2.2 0.8L19 20l-0.8-2.2L16 17l2.2-0.8L19 14Z"></path>
+              </svg>
+              AI-рекомендации
+            </span>
+            <span>
+              <svg class="tag-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 12l-8 8-8-8V4h8l8 8Z"></path>
+                <circle cx="8.5" cy="8.5" r="1"></circle>
+                <path d="M9.5 14l2 2 4-4"></path>
+              </svg>
+              Автоопределение категорий
+            </span>
+          </div>
+        </div>
+
+        <video
+          class="chat-screenshot chat-video"
+          src="assets/numqora-telegram-demo-landing.mp4"
+          width="720"
+          height="1560"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="assets/numqora-telegram-demo-landing-poster.jpg"
+          aria-label="Реальная запись общения с Numqora в Telegram"
+        ></video>
+      </section>
+
+      <section class="section" id="how" aria-labelledby="how-title">
+        <div class="section-heading">
+          <p class="eyebrow">Чат</p>
+          <h2 id="how-title">Веди учет так же просто, как пишешь сообщение</h2>
+        </div>
+        <div class="input-grid">
+          <article>
+            <h3>Говори на ходу</h3>
+            <p>Отправь голосовое про трату, долг или доход: ассистент разберет смысл сам.</p>
+          </article>
+          <article>
+            <h3>Пиши, как удобно</h3>
+            <p>“Ужин 6786, я оплатил, 2400 за Рому и 2200 за Леху”.</p>
+          </article>
+          <article>
+            <h3>Отправляй чеки и выписки</h3>
+            <p>Добавь фото чека или файл с историей транзакций от банка.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section answers" id="answers" aria-labelledby="answers-title">
+        <div class="section-heading">
+          <p class="eyebrow">Ассистент</p>
+          <h2 id="answers-title">Он не просто записывает, а помогает понимать картину</h2>
+        </div>
+        <div class="answer-list">
+          <div>
+            <strong>Как дела с финансами?</strong>
+            <span>расходы по категориям, динамика, бюджеты и заметные изменения</span>
+          </div>
+          <div>
+            <strong>Что с общими тратами?</strong>
+            <span>кто оплатил, кто участвует, сколько вернуть и кому</span>
+          </div>
+          <div>
+            <strong>Что делать дальше?</strong>
+            <span>напоминания, объяснения и подсказки без отдельной таблицы</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-preview" aria-label="Интерфейс Numqora">
+        <img
+          src="assets/numqora-overview.png"
+          width="390"
+          height="844"
+          alt="Экран Numqora с балансом, расходами по категориям и последними тратами"
+        >
+        <div>
+          <h2>Чат для быстрых действий, Mini App для визуализации и аналитики</h2>
+        </div>
+      </section>
+
+      <section class="section note" id="privacy" aria-label="Граница ассистента">
+        <p>Numqora не является финансовой, инвестиционной, налоговой или юридической консультацией.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Numqora. All rights reserved.</span>
+      <a href="https://t.me/NumqoraSupportBot">Поддержка в Telegram</a>
+    </footer>
+    <script>
+      document.querySelectorAll("video[autoplay]").forEach((video) => {
+        video.muted = true;
+        video.playsInline = true;
+        const start = () => {
+          const play = video.play?.();
+          if (play?.catch) play.catch(() => {});
+        };
+        if (video.readyState >= 2) start();
+        else video.addEventListener("canplay", start, { once: true });
+      });
+    </script>
+  </body>
+</html>
