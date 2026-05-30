@@ -288,14 +288,13 @@ h1 {
   inset: 0;
   display: block;
   width: 100%;
-  height: calc(100% + 0.75rem);
+  height: 100%;
   overflow: hidden;
   aspect-ratio: 770 / 1668;
   border: 0;
   border-radius: 0;
   background: #05070b;
   box-shadow: none;
-  filter: contrast(1.06) saturate(1.03);
   object-fit: cover;
   object-position: center top;
 }
