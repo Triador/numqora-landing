@@ -239,12 +239,13 @@ h1 {
     linear-gradient(325deg, rgba(241, 199, 91, 0.28), transparent 24%),
     linear-gradient(135deg, #202018, #060604 44%, #17130b);
   box-shadow:
-    -1.4rem 1.8rem 3.8rem rgba(0, 0, 0, 0.56),
+    -1.1rem 1.8rem 3.6rem rgba(0, 0, 0, 0.56),
+    0.6rem 0.8rem 1.8rem rgba(241, 199, 91, 0.08),
     0 0 0 1px rgba(241, 199, 91, 0.2),
     inset 0 0.12rem 0.16rem rgba(255, 255, 255, 0.18),
     inset 0 -0.35rem 0.8rem rgba(0, 0, 0, 0.74);
-  transform: perspective(72rem) rotateY(-6deg) rotateX(2deg) rotateZ(-1deg);
-  transform-origin: center;
+  transform: none;
+  transform-origin: center bottom;
 }
 
 .phone-frame::before {
@@ -282,11 +283,13 @@ h1 {
 }
 
 .chat-video {
+  display: block;
   width: 100%;
+  height: auto;
   overflow: hidden;
   aspect-ratio: 886 / 1920;
   border: 0;
-  border-radius: 2.08rem;
+  border-radius: 0;
   background: #05070b;
   box-shadow: none;
   object-fit: cover;
@@ -439,7 +442,7 @@ h3 {
   .phone-frame {
     justify-self: center;
     width: min(100%, 25rem);
-    transform: perspective(68rem) rotateY(-3deg) rotateX(1deg);
+    transform: none;
   }
 
   .input-grid,
@@ -531,7 +534,7 @@ h3 {
   }
 
   .chat-video {
-    border-radius: 1.74rem;
+    border-radius: 0;
   }
 
   .section {
