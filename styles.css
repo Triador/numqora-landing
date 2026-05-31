@@ -805,13 +805,21 @@ h3 {
 }
 
 @media (max-width: 520px) {
-  .site-header,
   .hero,
   .section,
   .footer {
     width: min(100% - 1rem, 23.5rem);
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .site-header {
+    width: 100%;
+    margin: 0;
+    padding: 0.78rem max(0.5rem, calc((100vw - 23.5rem) / 2));
+    overflow: visible;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(8, 8, 6, 0.92);
   }
 
   .brand-name {
