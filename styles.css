@@ -991,12 +991,12 @@ h3 {
   }
 
   .carousel-stage {
-    min-height: 44.25rem;
+    min-height: 35.5rem;
     margin-inline: -0.5rem;
   }
 
   .carousel-slide {
-    width: min(84vw, 19.75rem);
+    width: min(72vw, 16.6rem);
   }
 
   .carousel-slide[data-state="prev"] {
@@ -1044,7 +1044,11 @@ h3 {
   }
 
   .carousel-stage {
-    min-height: 42rem;
+    min-height: 34.35rem;
+  }
+
+  .carousel-slide {
+    width: min(72vw, 15.8rem);
   }
 
   .carousel-copy h3 {
