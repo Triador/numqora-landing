@@ -469,6 +469,7 @@ h3 {
   min-height: 53.5rem;
   overflow: hidden;
   isolation: isolate;
+  touch-action: pan-y;
 }
 
 .carousel-slide {
@@ -641,6 +642,17 @@ h3 {
     inset 0 -0.12rem 0.35rem rgba(0, 0, 0, 0.42);
 }
 
+.carousel-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-actions .button {
+  min-width: 13.5rem;
+  justify-content: center;
+}
+
 .feedback {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -662,11 +674,24 @@ h3 {
   line-height: 1.58;
 }
 
-.feedback-button {
+.button.feedback-button {
   min-width: 14rem;
+  border-color: rgba(255, 248, 232, 0.13);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 232, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(17, 17, 14, 0.82);
+  color: var(--ink);
   box-shadow:
-    0 1rem 2rem rgba(241, 199, 91, 0.16),
-    0 0 0 1px rgba(241, 199, 91, 0.1);
+    0 1rem 2rem rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(255, 248, 232, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.button.feedback-button:hover {
+  border-color: rgba(255, 248, 232, 0.2);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 232, 0.12), rgba(255, 255, 255, 0.035)),
+    rgba(20, 20, 17, 0.92);
 }
 
 .footer {
