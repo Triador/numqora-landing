@@ -905,11 +905,11 @@ h3 {
   }
 
   .chat-screenshot {
-    width: min(100%, 23.5rem);
+    width: min(100%, 21.25rem);
   }
 
   .phone-frame {
-    width: min(100%, 23.5rem);
+    width: min(100%, 21.25rem);
     padding: 0.38rem;
     border-radius: 2.45rem;
     transform: none;
@@ -958,12 +958,12 @@ h3 {
   }
 
   .carousel-stage {
-    min-height: 51rem;
+    min-height: 47.5rem;
     margin-inline: -0.5rem;
   }
 
   .carousel-slide {
-    width: min(92vw, 23.2rem);
+    width: min(88vw, 21.25rem);
   }
 
   .carousel-slide[data-state="prev"] {
@@ -1011,7 +1011,7 @@ h3 {
   }
 
   .carousel-stage {
-    min-height: 45rem;
+    min-height: 44.5rem;
   }
 
   .carousel-copy h3 {
